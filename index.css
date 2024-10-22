@@ -1,0 +1,55 @@
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 6rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes rotatingY {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes rotatingX {
+  from {
+    transform: rotateX(0deg);
+  }
+
+  to {
+    transform: rotateX(360deg);
+  }
+}
+
+@keyframes rotatingZ {
+  from {
+    transform: rotateZ(0deg);
+  }
+
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.out {
+  animation: rotatingY 5s linear infinite;
+}
+
+.in {
+  animation: rotatingZ 7s linear infinite;
+  color: white;
+  -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+  padding: 2rem;
+}
